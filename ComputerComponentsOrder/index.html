@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- The code below links to the CSS page titled style.ss-->
+    <link href="style.css" rel="stylesheet" />
+    <title>Learning HTML & CSS</title>
+</head>
+
+<body>
+    <!-- This is the main heading for the website.-->
+    <h1>List of Available Computer Components</h1>
+    <form id="desired-components"></form>
+    <!-- This is a paragraph to provide instructions for the user. -->
+    <p class="overall-text">
+        Please select the computer components that you wish to buy from the available options below:
+    </p>
+    <!-- This is the input button for Central Processing Unit, it contains 4 options.-->
+    <label for="CPU">Select your CPU:</label>
+    <select id="CPU">
+        <option value="none" data-price="0">None</option>
+        <option value="Ryzen 7 3700X" data-price="299.99">Ryzen 7 3700X</option>
+        <option value="Ryzen 7 5800X" data-price="399.99">Ryzen 7 5800X</option>
+        <option value="Ryzen 7 7800X" data-price="499.99">Ryzen 7 7800X</option>
+    </select>
+
+    <!-- This is the input button for Graphics Processing Unit (GPU), it contains 4 options.-->
+    <label for="GPU">Select your GPU:</label>
+    <Select id="GPU">
+        <option value="none" data-price="0">None</option>
+        <option value="RTX 3060" data-price="349.99">RTX 3060</option>
+        <option value="RTX 3070" data-price="499.99">RTX 3070</option>
+        <option value="RTX 4080" data-price="1399.99">RTX 4080</option>
+    </Select>
+
+
+    <!-- This is the input button for Random Access Memory (RAM), it contains 4 options.-->
+    <label for="RAM">Select your RAM:</label>
+    <Select id="RAM">
+        <option value="none" data-price="0">None</option>
+        <option value="Corsair Vengeance 16GB" data-price="99.99">Corsair Vengeance 16GB</option>
+        <option value="G.Skill Ripjaws 32GB" data-price="169.99">G.Skill Ripjaws 32GB</option>
+        <option value="Kingston Fury 64GB" data-price="299.99">Kingston Fury 64GB</option>
+    </Select>
+
+    <!-- This is the submit button, it is responsible for calculating the total price by activating the 'calculateTotal' function that is written in the 'TotalPrice.js' when clicked.  -->
+    <button type="button" onclick="calculateTotal()">Submit Order</button>
+
+    <!-- The is a subheading that informs the user where to expect the final receipt. -->
+    <h3>The final receipt can be seen below:</h3>
+
+    <!-- This is a div that is used to display the final receipt. It only shows up when the order is submitted.-->
+    <div id="final-receipt" class="final-receipt" style="display:none;"></div>
+
+    <!-- This is used to link to the JavaScript page titled TotalPrice.js-->
+    <script src="TotalPrice.js"></script>
+</body>
+
+</html>

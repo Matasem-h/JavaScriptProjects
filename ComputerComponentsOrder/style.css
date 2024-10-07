@@ -1,0 +1,109 @@
+/* This is the universal selector to reset margin, padding, and set box-sizing to border-box for all elements. */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* This is to style the body of the document. */
+body {
+    background-color: rgb(245, 224, 200);
+    font-family: Arial;
+    font-size: 24px;
+    margin: 20px;
+}
+
+/* This is to style for the main heading h1. */
+h1 {
+    text-align: center;
+    color: rgb(48, 48, 48);
+}
+
+/* These are general styling options for the overall instruction text. */
+.overall-text {
+    color: rgb(48, 48, 48);
+}
+
+/* This is to style labels associated with form inputs. */
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 15px;
+}
+
+/* This is to style the select buttons. */
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 3px solid #ccc;
+    font-size: 16px;
+}
+
+/* This is to style the submit button. */
+button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    background-color: #109c2f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* This is to style the hover effect for the button. */
+button:hover {
+    background-color: #035314;
+    */
+}
+
+/* This is to style the subheading h2. */
+h2 {
+    text-align: left;
+    padding: 20px;
+    color: rgb(48, 48, 48);
+}
+
+/* This is to style the final receipt section. */
+.final-receipt {
+    margin-top: 20px;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    color: black;
+    font-size: 18px;
+    line-height: 1.6;
+    border: 2px solid #109c2f;
+}
+
+/* This is to style the Final Receipt title h1 inside the receipt. */
+.final-receipt h1 {
+    font-size: 24px;
+    color: #000000;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* This is to style the paragraph (p) inside the receipt. */
+.final-receipt p {
+    margin: 10px 0;
+}
+
+/* This is to style the total price text inside the receipt. */
+.final-receipt strong {
+    font-size: 20px;
+    color: red;
+}
+
+/* This adds a colon after "Final Receipt". */
+.final-receipt h1::after {
+    content: ":";
+    color: #000000;
+    margin-left: 5px;
+}
+}
